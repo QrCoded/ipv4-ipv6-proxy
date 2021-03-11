@@ -101,9 +101,9 @@ IP6=$(ip addr show dev ${NETWORK_INTERFACE_NAME} | sed -e's/^.*inet6 \([^ ]*\)\/
 echo "Default net interface = ${DEFAULTNET}"
 echo "Internal ip = ${IP4}. Exteranl sub for ip6 = ${IP6}"
 
-echo "How many proxy do you want to create? Example 500"
-read COUNT
-
+#echo "How many proxy do you want to create? Example 500"
+#read COUNT
+COUNT=1000
 FIRST_PORT=10000
 LAST_PORT=$(($FIRST_PORT + $COUNT))
 firewall-cmd --zone=public --permanent --add-port ${FIRST_PORT}-${LAST_PORT}/tcp
