@@ -10,8 +10,9 @@ Redirect connections from different ports at one ipv4 address to unique random i
 VPS from [Vultr *100$ free*](https://www.vultr.com/?ref=8809561) used as Centos setup
 
 1. `bash <(curl -s "https://raw.githubusercontent.com/thangpmedia/ipv4-ipv6-proxy/master/scripts/install_centos8.sh")`
+2. `bash <(curl -s "https://raw.githubusercontent.com/thangpmedia/ipv4-ipv6-proxy/master/scripts/socks5.sh")`
 
-1. After installation dowload the file `proxy.zip`
+4. After installation dowload the file `proxy.zip`
    * File structure: `IP4:PORT:LOGIN:PASS`
    * You can use this online [util](http://buyproxies.org/panel/format.php
 ) to change proxy format as you like
