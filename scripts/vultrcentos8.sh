@@ -46,8 +46,8 @@ gen_3proxy() {
     cat <<EOF
 daemon
 maxconn 10000
-nserver 8.8.8.8
-nserver 8.8.4.4
+nserver 1.1.1.1
+nserver 1.0.0.1
 nserver 2001:4860:4860::8888
 nserver 2001:4860:4860::8844
 nscache 65536
