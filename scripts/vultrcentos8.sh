@@ -17,9 +17,9 @@ install_3proxy() {
     echo "installing 3proxy"
     mkdir -p /3proxy
     cd /3proxy
-    URL="https://github.com/z3APA3A/3proxy/archive/0.9.3.tar.gz"
+    URL="https://github.com/z3APA3A/3proxy/archive/0.9.4.tar.gz"
     wget -qO- $URL | bsdtar -xvf-
-    cd 3proxy-0.9.3
+    cd 3proxy-0.9.4
     make -f Makefile.Linux
     mkdir -p /usr/local/etc/3proxy/{bin,logs,stat}
     mv /3proxy/3proxy-0.9.3/bin/3proxy /usr/local/etc/3proxy/bin/
@@ -48,8 +48,8 @@ daemon
 maxconn 10000
 nserver 1.1.1.1
 nserver 1.0.0.1
-nserver 2001:4860:4860::8888
-nserver 2001:4860:4860::8844
+nserver 2606:4700:4700::1111
+nserver 2606:4700:4700::1001
 nscache 65536
 timeouts 1 5 30 60 180 1800 15 60
 setgid 65535
