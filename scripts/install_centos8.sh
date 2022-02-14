@@ -50,8 +50,8 @@ daemon
 maxconn 500
 nserver 1.1.1.1
 nserver 8.8.4.4
-nserver 2001:4860:4860::8888
-nserver 2001:4860:4860::8844
+nserver 2001:19f0:300:1704::6
+nserver 2a05:f480:1800:5fe::64
 nscache 65536
 nscache6 65536
 timeouts 1 5 30 60 180 1800 15 60
