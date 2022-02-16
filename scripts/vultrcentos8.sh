@@ -45,7 +45,7 @@ install_3proxy() {
 gen_3proxy() {
     cat <<EOF
 daemon
-maxconn 4000
+maxconn 10000
 nserver 8.8.8.8
 nserver 8.8.4.4
 nserver 2001:4860:4860::8888
